@@ -1,0 +1,379 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.center{
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 4px 1px rgb(217, 159, 72)  ;
+}
+
+ul, ol {
+    list-style-position: inside;
+    text-align: center;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav button {
+    padding: 8px 15px;
+    border:none ;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color:#0056b3;
+}
+
+main, section {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+p {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    
+}
+.form{
+    text-align: center;
+    background: #f8f9fa;
+
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: rgb(220, 250, 246);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    border: 1px solid #eee;
+}
+
+ textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: solid;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 20px;
+    
+}
+
+button:hover {
+    background:  #0056b3;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: center;
+}
+tr:nth-child(odd){
+    background: #ffffff;
+}
+
+tr:nth-child(even) {
+    background:  #dddcdc;
+}
+tr:hover {
+    background-color:#d9e8f7;
+}
+.box tr {
+    background: #f3aaaa ;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+.change {
+    display: grid;
+    grid-auto-flow: column; 
+    justify-content: center;
+    gap: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    background-color:black;
+    border: none;
+    font-size: 25px;
+}
+.scroll-text{
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 10s linear infinite;
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.grade-table {
+    width: 100%;
+    margin: auto;
+}
+
+.profile-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgb(184, 181, 181);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    
+}
+.profile-img{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid orange;
+    margin-bottom: 20px;
+}
+
+address,
+.profile-page p,
+.profile-page ul,
+.profile-page ol,
+.profile-page h1,
+.profile-page h2{
+    text-align: center;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.course-box{
+    background: #ffffff;
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px;
+    margin: 5px auto;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+}
+.course-card1,
+.course-card2,
+.course-card3,
+.course-card4 {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.course-card1:hover,
+.course-card2:hover,
+.course-card3:hover,
+.course-card4:hover{
+    background: #d0bfb2;
+}
+
+.card {
+    background-color: #eecdb6;
+    width: 500px;         
+    margin: 40px auto;     
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card-box1,
+.card-box2,
+.card-box3,
+.card-box4,
+.card-box5{
+    text-align: center;
+    width: 750px;
+    margin: 5px auto;
+    min-height: 215px;
+    padding: 5px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #c3ebf6;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    gap: 2px;
+}
+.card-box1:hover,
+.card-box2:hover,
+.card-box3:hover,
+.card-box4:hover,
+.card-box5:hover{
+    /* transform: translateY(-5px); */
+    background: #ded1d1;
+}
+.card-box h2{
+    color:  #007bff; 
+}
+
+.card1{
+    background-color: #eecdb6;
+    width: 700px;         
+    margin: 40px auto;     
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.card1 caption{
+    background: #f65b5b;
+}
+.card-box1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 10px;
+}
+.card-box1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 10px;
+}
+.card-box1 p {
+    text-align: left;
+}
+.card-box1 p strong {
+    display: inline-block;
+    width: 130px;   
+}
+@media (max-width: 768px){
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .courses-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .card,
+    .card1,
+    .course-box {
+        width: 90%;
+    }
+
+    .card-box1,
+    .card-box2,
+    .card-box3,
+    .card-box4,
+    .card-box5 {
+        width: 95%;
+    }
+    .profile-page {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    .change {
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+    .grade-table {
+        display: block;
+        overflow-x: auto;
+    }
+    footer {
+        font-size: 16px;
+    }
+
+}
